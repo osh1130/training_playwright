@@ -17,7 +17,7 @@ test('get started link', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
 });
 
-test.only('check java page', async ({ page }) => {
+test('check java page', async ({ page }) => {
   await page.goto('https://playwright.dev/');
   await page.getByRole('link',{name:'Get start'}).click();
   await page.getByRole('button',{name:'Node.js'}).hover();
